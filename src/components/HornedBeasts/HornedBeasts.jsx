@@ -1,5 +1,9 @@
 import React, {useState} from "react";
 
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+
+
 function HornedBeast(props){
 
 const [favorites, setFavorites]=useState(0);
@@ -10,18 +14,44 @@ const handleClick = ()=>{
 
 
     return(
-        <>
-            <h2>{props.title}</h2>
-            <img src={props.imageUrl} alt={props.keyword}/>
-            <p>{props.description}</p>
-            <button onClick={handleClick}></button>
-            ❤️ Favorites: {favorites}
-        </>
+<Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={props.imageUrl} alt={props.keyword} />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>
+        {props.description}
+        </Card.Text>
+        <Card.Text>
+        ❤️ Favorites: {favorites}
+        </Card.Text>
+        <Button  onClick={handleClick} variant="primary">Vote for {props.title}</Button>
+
+      </Card.Body>
+    </Card>
+
+
+
+        // <>
+        //     <h2>{props.title}</h2>
+        //     <img src={props.imageUrl} alt={props.keyword}/>
+        //     <p>{props.description}</p>
+        //     <button onClick={handleClick}></button>
+        //     ❤️ Favorites: {favorites}
+        // </>
 
     )
 }
 
 export default HornedBeast;
+
+
+
+
+
+
+
+
+
 
 // "_id": 1,
 // "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
@@ -31,12 +61,10 @@ export default HornedBeast;
 // "horns": 1
 
 // Given that a user opens the application in the browser
-// When a user clicks on an image of a beast
-// Then the number of "Favorites" displayed on that beast will increase by one.
-
-// Create state inside of the HornedBeast component that keeps track of the number of times each beast has been favorited.
-
-// Put a heart in each HornedBeast component with the number of “Favorites” next to it.
+// When a user clicks on an item other than the horned beasts, such as the title of the page or the footer,
+// Then the information and styles should change.
+// When the user clicks on elements such as the header, footer or title of page, make something change using state.
+// You can update the words, change the styles or add something new. Be creative.
 
 
 // key={index}
@@ -70,3 +98,4 @@ export default HornedBeast;
 // }
 
 // export default Person;
+

@@ -41,13 +41,13 @@ I spent four hours on this, but an hour of it was figuring out how to set up the
 
 1. Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
     - Estimate of time needed to complete: 3 hrs
-    - Start time: 2:47
-    - Finish time: _____
-    - Actual time needed to complete: _____
+    - Start time: 2:47pm
+    - Finish time: 3:02pm
+    - Actual time needed to complete: 15 minutes
 
 1. Number and name of feature: Feature 3: Bootstrap
     - Estimate of time needed to complete: 3 hrs
-    - Start time: _____
+    - Start time: 3:03pm
     - Finish time: _____
     - Actual time needed to complete: _____
 

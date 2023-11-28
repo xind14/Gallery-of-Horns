@@ -6,6 +6,7 @@ import Footer from './components/Footer/Footer.jsx';
 
 import gallery from './assets/data.json';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App(){
 
