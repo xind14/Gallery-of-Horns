@@ -1,6 +1,8 @@
 
 import React from "react";
 import HornedBeast from "../HornedBeasts/HornedBeasts.jsx";
+
+
 import styles from './gallery.module.css'
 
 function Gallery(){
@@ -16,3 +18,30 @@ function Gallery(){
 }
 
 export default Gallery;
+
+// The Gallery component should pass props for the title, image and description to each HornedBeast component. You will find this information in the provided JSON file.
+
+// import React from 'react';
+
+// import Person from './Person.jsx';
+
+// function People(props) {
+
+//   return (
+//     <>
+//       {
+//         props.list.map( (person,index) =>
+//           <Person
+//             key={index}
+//             name={person.name}
+//             hair={person.hair} />
+//         )
+//       }
+
+//     </>
+//   )
+
+// }
+
+// export default People;
+
