@@ -36,12 +36,12 @@ I spent four hours on this, but an hour of it was figuring out how to set up the
 1. Number and name of feature: Feature #1: Display Images
     - Estimate of time needed to complete: 2 hrs
     - Start time: 1:48pm
-    - Finish time: _____
-    - Actual time needed to complete: _____
+    - Finish time: 2:47pm
+    - Actual time needed to complete: 1 hr
 
 1. Number and name of feature: Feature #2: Allow Users to Favorite Individual Beasts
     - Estimate of time needed to complete: 3 hrs
-    - Start time: _____
+    - Start time: 2:47
     - Finish time: _____
     - Actual time needed to complete: _____
 

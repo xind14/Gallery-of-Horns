@@ -1,9 +1,5 @@
 import React from "react";
 
-//comment out?
-import styles from './header.module.css' 
-
-
 
 function Header(props){
     return (
@@ -11,7 +7,7 @@ function Header(props){
         <header>
 
             <h1>{props.title}</h1>     
-            <div> We have {props.beastArray} to look through</div>
+            <div> We have {props.beastGallery} to look through</div>
         </header>
     )
 }

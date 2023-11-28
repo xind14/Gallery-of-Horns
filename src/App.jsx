@@ -1,25 +1,24 @@
 import React, {useState} from 'react';
 
-import beasts from './assets/data.json';
-
-
 import Header from './components/Header/Header.jsx';
 import Gallery from './components/Gallery/Gallery.jsx';
 import Footer from './components/Footer/Footer.jsx';
+
+import gallery from './assets/data.json';
+
 
 function App(){
 
   return(
     <main>
-      <Header title="Gallery of Horns" beastArray={beasts.length} />
-      <Gallery list ={beasts}/>
+      <Header title="Gallery of Horns" beastGallery={gallery.length} />
+      <Gallery list ={gallery}/>
       <Footer content="&copy; 2023 Xin Deng"/>
     </main>
   )
 }
 
 export default App
-
 
 // function App() {
 
