@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 
 function HornedBeast(props){
+
+const [favorites, setFavorites]=useState(0);
+
+const handleClick = ()=>{
+    setFavorites(favorites +1);
+}
+
+
     return(
         <>
             <h2>{props.title}</h2>
             <img src={props.imageUrl} alt={props.keyword}/>
             <p>{props.description}</p>
+            <button onClick={handleClick}></button>
+            ❤️ Favorites: {favorites}
         </>
 
     )
@@ -20,7 +30,13 @@ export default HornedBeast;
 // "keyword": "narwhal",
 // "horns": 1
 
+// Given that a user opens the application in the browser
+// When a user clicks on an image of a beast
+// Then the number of "Favorites" displayed on that beast will increase by one.
 
+// Create state inside of the HornedBeast component that keeps track of the number of times each beast has been favorited.
+
+// Put a heart in each HornedBeast component with the number of “Favorites” next to it.
 
 
 // key={index}
