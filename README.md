@@ -1,19 +1,30 @@
-# React + Vite
+# Lab 1, 2, 3, 4, 5 
 
-Add the README from our configs folder, but edited by you to include an overview of the project for a new visitor to your repo. Name all collaborators.
+## Gallery of Horns Overview
 
+By the end of this module, you will create an application that displays images and information of horned animals. This application will allow you to filter the images by number of horns and chose your favorite image.
 
+For this class we will just be focusing on the component structure of the application. You will create a new React application using Vite and fill it with components. Refer to ‘Feature Tasks’ to see exactly which components to build and where to display them.
 
-
-
-
-
-
+## Gallery of Horns Pt. 1
 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Author: Xin Deng, Brendan Huddleston, Johnny Brackus
 
-Currently, two official plugins are available:
+### Links and Resources
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+### Lighthouse Accessibility Report Score
+
+![Lighthouse report for Lab 1](src/assets/lighthouse1.png)
+
+### Reflections and Comments
+
+1. How much time spent on lab?
+
+I spent four hours on this, but an hour of it was figuring out how to set up the lab with the npm and repo which we did not go over in class and the people I was working with had trouble too. Then two hours of it was figuring out why the live was crashing even though I tried to copy someone elses work word for word to test it out and it was still having crashing issues. I had to quit npm and run it again every time I made changes which was weird. Rewriting my own code took an hour. 
+
+
+
+
+
