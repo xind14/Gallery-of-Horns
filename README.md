@@ -29,7 +29,9 @@ I spent four hours on this, but an hour of it was figuring out how to set up the
 ## Gallery of Horns Pt. 2
 
 
-### Author: Xin Deng
+### Author: Xin Deng, Kyle Aleman
+
+- He helped me figure out row needed to be in gallery and col/card was used in hornedbeast. Although, we don't quite understand how.
 
 ### Time Estimate
 
@@ -48,8 +50,8 @@ I spent four hours on this, but an hour of it was figuring out how to set up the
 1. Number and name of feature: Feature 3: Bootstrap
     - Estimate of time needed to complete: 3 hrs
     - Start time: 3:03pm
-    - Finish time: _____
-    - Actual time needed to complete: _____
+    - Finish time: 6:39pm
+    - Actual time needed to complete: 3 and a half hrs
 
 
 ### Links and Resources
@@ -59,12 +61,15 @@ I spent four hours on this, but an hour of it was figuring out how to set up the
 
 ### Lighthouse Accessibility Report Score
 
-![Lighthouse report for Lab 1](src/assets/lighthouse2.png)
+![Lighthouse report for Lab 2](src/assets/lighthouse2.png)
 
 ### Reflections and Comments
 
 1. A question within the context of the lab assignment
+    - I really don't understand how things in bootstrap work the way they do. Also I wasn't sure but I did a lot of inline CSS because that's what John did.
 1. An observation about the lab assignment, or related ‘Ah-hah!’ moment
+    - Once I made the props list in the gallery using props for all the files made things so much easier.
 1. How long you spent working on this assignment
+    - Almost 5 hours 
 
 

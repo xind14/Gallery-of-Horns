@@ -1,6 +1,7 @@
-.foot {
-  background-color: rgb(132, 217, 115);
+footer {
   text-align: center;
   font-size: 25px;
   font-weight: bold;
+  margin: 1em;
+  font-size: 20px;
 }

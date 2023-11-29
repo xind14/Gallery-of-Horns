@@ -1,31 +1,24 @@
-import React from "react";
+import React, { useState } from 'react';
+import styles from './header.module.css';
 
+function Header(props) {
+  const [isVisible, setIsVisible] = useState(true);
 
-function Header(props){
-    return (
-        // <header className={styles.hdr}>
-        <header>
-
-            <h1>{props.title}</h1>     
-            <div> We have {props.beastGallery} to look through</div>
-        </header>
-    )
+  const handleClick = () => {
+    setIsVisible(!isVisible);
+  };
+if (isVisible){
+  return (
+    <header className={styles.hdr} onClick={handleClick}>
+      <h1>{props.title}</h1>
+      <div>We have {props.beastGallery} to look through</div>
+    </header>
+    );
+} else {
+  return null;
 }
-
-
+}
 export default Header;
 
 
-
-// function Header(props) {
-
-//     return (
-//       <header>
-//         <h1>{props.title}</h1>
-//         <div>We have {props.members} family members for you to meet</div>
-//       </header>
-//     )
-  
-//   }
-  
-//   export default Header;
+//The handle click was written with ChatGPT's help 
