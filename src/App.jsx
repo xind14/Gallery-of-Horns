@@ -17,10 +17,11 @@ const [clickBeast, setClickBeast]=useState(null);
 const [showModal, setShowModal]=useState(false);
 
 const handleShowModal=(hornedBeast)=>{
+  setClickBeast(hornedBeast);
   setShowModal(true);
 };
 const handleCloseModal=()=>{
-  setShowModal(close);
+  setShowModal(false);
 };
 
   return(
@@ -34,7 +35,7 @@ const handleCloseModal=()=>{
       clickBeast={clickBeast}
       />
     </main>
-  )
+  );
 }
 
 export default App
