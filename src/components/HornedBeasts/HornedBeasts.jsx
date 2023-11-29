@@ -3,6 +3,9 @@ import React, {useState} from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
+import Col from 'react-bootstrap/Col';
+
+
 
 function HornedBeast(props){
 
@@ -13,33 +16,28 @@ const handleClick = ()=>{
 }
 
 
-    return(
-<Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.imageUrl} alt={props.keyword} />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>
-        {props.description}
-        </Card.Text>
-        <Card.Text>
-        ❤️ Favorites: {favorites}
-        </Card.Text>
-        <Button  onClick={handleClick} variant="primary">Vote for {props.title}</Button>
-
-      </Card.Body>
-    </Card>
+return (
 
 
 
-        // <>
-        //     <h2>{props.title}</h2>
-        //     <img src={props.imageUrl} alt={props.keyword}/>
-        //     <p>{props.description}</p>
-        //     <button onClick={handleClick}></button>
-        //     ❤️ Favorites: {favorites}
-        // </>
+          <Col key={props._id} style={{ marginBottom: '15px', justifyContent:'center'}}>
+            <Card style={{ width: '30rem', height: '25rem', justifyContent:'center', verticalAlign:'center', border:'solid black'}}>
+              <Card.Img variant="top" src={props.imageUrl} alt={props.keyword}  style={{ height:'50%', width:'100%', objectFit:'contain',}} />
+              <Card.Body style={{textAlign:'center'}}>
+                <Card.Title>{props.title}</Card.Title>
+                <Card.Text>{props.description}</Card.Text>
+                <Card.Text>❤️ Favorites: {favorites}</Card.Text>
+                <Button onClick={handleClick} variant="primary">
+                  Vote for {props.title}
+                </Button>
+              </Card.Body>
+            </Card>
+          </Col>
+        
 
-    )
+
+        
+  );
 }
 
 export default HornedBeast;

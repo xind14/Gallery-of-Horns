@@ -2,6 +2,9 @@
 import React from "react";
 import HornedBeast from "../HornedBeasts/HornedBeasts.jsx";
 
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 
 // import styles from './gallery.module.css'
 
@@ -14,8 +17,10 @@ function Gallery(props){
 // list = gallery JSON
 // content =footer
 // map(person, index = current value, index)
+<Container>
+<Row xs={true} md={true}>
 
-        <>
+        
         {
             props.list.map((hornedBeast, index)=>
             <HornedBeast 
@@ -27,12 +32,12 @@ function Gallery(props){
             keyword={hornedBeast.keyword}
             horns={hornedBeast.horns}
 
-
-
             />
             )
         }
-        </>
+           </Row>
+    </Container>
+
 
         // <div className={styles.gallery}>
             
