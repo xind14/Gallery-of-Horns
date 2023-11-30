@@ -73,3 +73,36 @@ I spent four hours on this, but an hour of it was figuring out how to set up the
     - Almost 5 hours 
 
 
+## Gallery of Horns Pt. 3
+
+
+### Author: Xin Deng, Kyle Aleman
+
+- He helped me figure out row needed to be in gallery and col/card was used in hornedbeast. Although, we don't quite understand how.
+
+### Time Estimate
+
+1. Number and name of feature: Feature #1: Display a modal
+    - Estimate of time needed to complete: 6 hrs
+    - Start time: 1:34pm
+    - Finish time: 2:47pm
+    - Actual time needed to complete: 1 hr
+
+
+
+### Links and Resources
+
+- [data.json](https://codefellows.github.io/code-301-guide/curriculum/class-02/lab/assets/data.json)
+
+
+### Lighthouse Accessibility Report Score
+
+![Lighthouse report for Lab 2](src/assets/lighthouse3.png)
+
+### Reflections and Comments
+
+1. A question within the context of the lab assignment
+1. An observation about the lab assignment, or related ‘Ah-hah!’ moment
+1. How long you spent working on this assignment
+
+
