@@ -39,6 +39,8 @@ const handleCloseModal=()=>{
 
 export default App
 
+
+
 // Map over the JSON data in your Gallery component to render each beast
 // Send a function into your Gallery component that allows the user to update state in the App
 // Create a SelectedBeast component and include it in your App

@@ -1,5 +1,3 @@
-
-
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
@@ -32,6 +30,7 @@ function HornedBeast(props) {
             src={props.imageUrl}
             alt={props.keyword}
             style={{ height: "50%", width: "100%", objectFit: "contain" }}
+            onClick={props.userClick}
           />
           <Card.Body style={{ textAlign: "center" }}>
             <Card.Title>{props.title}</Card.Title>

@@ -9,6 +9,8 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 function SelectedBeast(props) {
+  console.log('SelectedBeast Props:', props);
+console.log('SelectedBeast clickBeast:', props.clickBeast);
   return (
     <Modal show={props.show} onHide={props.hide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>
@@ -17,7 +19,7 @@ function SelectedBeast(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img src={props.clickBeast.imageUrl} alt={props.clickBeast.title} style={{ width: '100%' }} />
+        <img src={props.clickBeast.image_url} alt={props.clickBeast.title} style={{ width: '100%' }} />
         <p>{props.clickBeast.description}</p>
       </Modal.Body>
       <Modal.Footer>
@@ -28,6 +30,9 @@ function SelectedBeast(props) {
 }
 
 export default SelectedBeast;
+
+
+
 
 // import Button from 'react-bootstrap/Button';
 // import Modal from 'react-bootstrap/Modal';
