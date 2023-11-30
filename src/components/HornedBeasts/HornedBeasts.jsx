@@ -22,25 +22,32 @@ function HornedBeast(props) {
   };
 
   return (
-    <Col key={props._id} style={{ marginBottom: '15px', justifyContent: 'center' }}>
+    <Col
+      key={props._id}
+      style={{ justifyContent: "center", gap: "20px", display: "flex" }}
+    >
       <Card
         style={{
-          width: '30rem',
-          height: '25rem',
-          justifyContent: 'center',
-          verticalAlign: 'center',
-          border: 'solid black',
+          width: "30rem",
+          height: "40rem",
+          justifyContent: "center",
+          verticalAlign: "center",
+          border: "solid black",
         }}
       >
         <Card.Img
           variant="top"
           src={props.imageUrl}
           alt={props.keyword}
-          style={{ height: '50%', width: '100%', objectFit: 'contain', cursor: 'pointer' }}
+          style={{
+            height: "50%",
+            width: "100%",
+            objectFit: "contain",
+            cursor: "pointer",
+          }}
           onClick={handleShowModal}
-          
         />
-        <Card.Body style={{ textAlign: 'center' }}>
+        <Card.Body style={{ textAlign: "center" }}>
           <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.description}</Card.Text>
           <Card.Text>❤️ Favorites: {favorites}</Card.Text>
@@ -60,15 +67,6 @@ function HornedBeast(props) {
 
 export default HornedBeast;
 
-
-
-
-
-
-
-
-
-
 // import React, { useState } from "react";
 // import Button from "react-bootstrap/Button";
 // import Card from "react-bootstrap/Card";
@@ -81,10 +79,8 @@ export default HornedBeast;
 //     setFavorites(favorites + 1);
 //   };
 
-
-
 //   return (
-    
+
 //       <Col
 //         key={props._id}
 //         style={{ marginBottom: "15px", justifyContent: "center" }}
@@ -115,14 +111,10 @@ export default HornedBeast;
 //         </Card>
 //       </Col>
 
-  
 //   );
 // }
 
 // export default HornedBeast;
-
-
-
 
 //class demo
 // import React, {useState} from 'react';

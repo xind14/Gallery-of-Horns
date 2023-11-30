@@ -1,6 +1,9 @@
-import React from 'react';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
+// Used Vertically center modal on react bootstrap site
+
+
+import React from "react";
+import Modal from "react-bootstrap/Modal";
+import Button from "react-bootstrap/Button";
 
 function SelectedBeast({ show, hide, clickBeast }) {
   return (
@@ -12,7 +15,7 @@ function SelectedBeast({ show, hide, clickBeast }) {
         <img
           src={clickBeast && clickBeast.imageUrl}
           alt={clickBeast && clickBeast.title}
-          style={{ width: '100%' }}
+          style={{ width: "100%" }}
         />
         <p>{clickBeast && clickBeast.description}</p>
       </Modal.Body>
@@ -25,27 +28,9 @@ function SelectedBeast({ show, hide, clickBeast }) {
 
 export default SelectedBeast;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Use the state in the App to render an individual beast in a Modal in the SelectedBeast component using React Bootstrap
 
-// Used Vertically center modal on react bootstrap site 
-
+// Used Vertically center modal on react bootstrap site
 
 // import React from 'react';
 // import Modal from 'react-bootstrap/Modal';
@@ -71,13 +56,6 @@ export default SelectedBeast;
 // }
 
 // export default SelectedBeast;
-
-
-
-
-
-
-
 
 // import Button from 'react-bootstrap/Button';
 // import Modal from 'react-bootstrap/Modal';
@@ -128,4 +106,3 @@ export default SelectedBeast;
 // }
 
 // render(<App />);
-

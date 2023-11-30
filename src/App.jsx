@@ -1,10 +1,10 @@
-import React from 'react';
-import Header from './components/Header/Header';
-import Gallery from './components/Gallery/Gallery';
-import Footer from './components/Footer/Footer';
+import React from "react";
+import Header from "./components/Header/Header";
+import Gallery from "./components/Gallery/Gallery";
+import Footer from "./components/Footer/Footer";
 // import SelectedBeast from './components/SelectedBeast/SelectedBeast';
-import gallery from './assets/data.json';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import gallery from "./assets/data.json";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
@@ -19,10 +19,6 @@ function App() {
 
 export default App;
 
-
-
-
-
 // import React, {useState} from 'react';
 
 // import Header from './components/Header/Header.jsx';
@@ -33,7 +29,6 @@ export default App;
 // import gallery from './assets/data.json';
 
 // import 'bootstrap/dist/css/bootstrap.min.css';
-
 
 // function App(){
 
@@ -53,7 +48,7 @@ export default App;
 //       <Header title="Gallery of Horns" beastGallery={gallery.length} />
 //       <Gallery list ={gallery} onImageClick={handleShowModal}/>
 //       <Footer content="&copy; 2023 Xin Deng"/>
-//       <SelectedBeast 
+//       <SelectedBeast
 //       show={showModal}
 //       hide={handleCloseModal}
 //       clickBeast={clickBeast}
@@ -65,20 +60,12 @@ export default App;
 
 // export default App
 
-
-
-
-
-
-
 // Map over the JSON data in your Gallery component to render each beast
 // Send a function into your Gallery component that allows the user to update state in the App
 // Create a SelectedBeast component and include it in your App
 // Use the state in the App to render an individual beast in a Modal in the SelectedBeast component using React Bootstrap
 // When the user clicks on an individual image
 // Then the image should render larger on the screen with the description displayed
-
-
 
 //in class demo
 // import { useState } from 'react'

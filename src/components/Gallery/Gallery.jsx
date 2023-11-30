@@ -1,6 +1,6 @@
-
 import React from "react";
 import HornedBeast from "../HornedBeasts/HornedBeasts.jsx";
+import Col from "react-bootstrap/Col";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -8,17 +8,18 @@ import Row from "react-bootstrap/Row";
 function Gallery(props) {
   return (
     <Container>
-      <Row xs={1} sm={2} md={3} lg={4}>
+      <Row xs={1} sm={2} md={3} lg={4} className="justify-content-center">
         {props.list.map((hornedBeast, index) => (
-          <HornedBeast
-            key={index}
-            title={hornedBeast.title}
-            _id={hornedBeast._id}
-            imageUrl={hornedBeast.image_url}
-            description={hornedBeast.description}
-            keyword={hornedBeast.keyword}
-            horns={hornedBeast.horns}
-          />
+          <Col key={index} style={{ margin: "15px" }}>
+            <HornedBeast
+              title={hornedBeast.title}
+              _id={hornedBeast._id}
+              imageUrl={hornedBeast.image_url}
+              description={hornedBeast.description}
+              keyword={hornedBeast.keyword}
+              horns={hornedBeast.horns}
+            />
+          </Col>
         ))}
       </Row>
     </Container>
@@ -26,15 +27,6 @@ function Gallery(props) {
 }
 
 export default Gallery;
-
-
-
-
-
-
-
-
-
 
 // import React from "react";
 // import HornedBeast from "../HornedBeasts/HornedBeasts.jsx";
@@ -44,12 +36,7 @@ export default Gallery;
 
 // import styles from './gallery.module.css'
 
-
 // Send a function into your Gallery component that allows the user to update state in the App
-
-
-
-
 
 // function Gallery(props) {
 //   return (
@@ -73,7 +60,6 @@ export default Gallery;
 // }
 
 // export default Gallery;
-
 
 //class demo
 // import React from 'react';
