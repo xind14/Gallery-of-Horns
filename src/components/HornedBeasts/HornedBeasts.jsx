@@ -1,120 +1,53 @@
+
+
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 
-import SelectedBeast from "../SelectedBeast/SelectedBeast";
-
 function HornedBeast(props) {
   const [favorites, setFavorites] = useState(0);
-  const [showModal, setShowModal] = useState(false);
 
-  const handleShowModal = () => {
-    setShowModal(true);
-  };
-
-  const handleFavClick = () => {
+  const handleClick = () => {
     setFavorites(favorites + 1);
   };
 
-  const handleCloseModal = () => {
-    setShowModal(false);
-  };
-
   return (
-    <Col
-      key={props._id}
-      style={{ justifyContent: "center", gap: "20px", display: "flex" }}
-    >
-      <Card
-        style={{
-          width: "30rem",
-          height: "40rem",
-          justifyContent: "center",
-          verticalAlign: "center",
-          border: "solid black",
-        }}
+
+      <Col
+        key={props._id}
+        style={{ marginBottom: "15px", justifyContent: "center" }}
       >
-        <Card.Img
-          variant="top"
-          src={props.imageUrl}
-          alt={props.keyword}
+        <Card
           style={{
-            height: "50%",
-            width: "100%",
-            objectFit: "contain",
-            cursor: "pointer",
+            width: "30rem",
+            height: "25rem",
+            justifyContent: "center",
+            verticalAlign: "center",
+            border: "solid black",
           }}
-          onClick={handleShowModal}
-        />
-        <Card.Body style={{ textAlign: "center" }}>
-          <Card.Title>{props.title}</Card.Title>
-          <Card.Text>{props.description}</Card.Text>
-          <Card.Text>❤️ Favorites: {favorites}</Card.Text>
-          <Button onClick={handleFavClick} variant="primary">
-            Vote for {props.title}
-          </Button>
-        </Card.Body>
-      </Card>
-      <SelectedBeast
-        show={showModal}
-        hide={handleCloseModal}
-        clickBeast={props}
-      />
-    </Col>
+        >
+          <Card.Img
+            variant="top"
+            src={props.imageUrl}
+            alt={props.keyword}
+            style={{ height: "50%", width: "100%", objectFit: "contain" }}
+          />
+          <Card.Body style={{ textAlign: "center" }}>
+            <Card.Title>{props.title}</Card.Title>
+            <Card.Text>{props.description}</Card.Text>
+            <Card.Text>❤️ Favorites: {favorites}</Card.Text>
+            <Button onClick={handleClick} variant="primary">
+              Vote for {props.title}
+            </Button>
+          </Card.Body>
+        </Card>
+      </Col>
+
   );
 }
 
 export default HornedBeast;
-
-// import React, { useState } from "react";
-// import Button from "react-bootstrap/Button";
-// import Card from "react-bootstrap/Card";
-// import Col from "react-bootstrap/Col";
-
-// function HornedBeast(props) {
-//   const [favorites, setFavorites] = useState(0);
-
-//   const handleClick = () => {
-//     setFavorites(favorites + 1);
-//   };
-
-//   return (
-
-//       <Col
-//         key={props._id}
-//         style={{ marginBottom: "15px", justifyContent: "center" }}
-//       >
-//         <Card
-//           style={{
-//             width: "30rem",
-//             height: "25rem",
-//             justifyContent: "center",
-//             verticalAlign: "center",
-//             border: "solid black",
-//           }}
-//         >
-//           <Card.Img
-//             variant="top"
-//             src={props.imageUrl}
-//             alt={props.keyword}
-//             style={{ height: "50%", width: "100%", objectFit: "contain" }}
-//           />
-//           <Card.Body style={{ textAlign: "center" }}>
-//             <Card.Title>{props.title}</Card.Title>
-//             <Card.Text>{props.description}</Card.Text>
-//             <Card.Text>❤️ Favorites: {favorites}</Card.Text>
-//             <Button onClick={handleClick} variant="primary">
-//               Vote for {props.title}
-//             </Button>
-//           </Card.Body>
-//         </Card>
-//       </Col>
-
-//   );
-// }
-
-// export default HornedBeast;
 
 //class demo
 // import React, {useState} from 'react';

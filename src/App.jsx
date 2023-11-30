@@ -1,64 +1,43 @@
-import React from "react";
-import Header from "./components/Header/Header";
-import Gallery from "./components/Gallery/Gallery";
-import Footer from "./components/Footer/Footer";
-// import SelectedBeast from './components/SelectedBeast/SelectedBeast';
-import gallery from "./assets/data.json";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React, {useState} from 'react';
 
-function App() {
-  return (
+import Header from './components/Header/Header.jsx';
+import Gallery from './components/Gallery/Gallery.jsx';
+import Footer from './components/Footer/Footer.jsx';
+import SelectedBeast from './components/SelectedBeast/SelectedBeast.jsx';
+
+import gallery from './assets/data.json';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function App(){
+
+const [clickBeast, setClickBeast]=useState({});
+
+const [showModal, setShowModal]=useState(false);
+
+const handleShowModal=(hornedBeast)=>{
+  setClickBeast (hornedBeast);
+  setShowModal(true);
+};
+const handleCloseModal=()=>{
+  setShowModal(false);
+};
+  return(
     <main>
       <Header title="Gallery of Horns" beastGallery={gallery.length} />
-      <Gallery list={gallery} />
-      <Footer content="&copy; 2023 Xin Deng" />
-      {/* <SelectedBeast /> */}
+      <Gallery list ={gallery} onImageClick={handleShowModal}/>
+      <Footer content="&copy; 2023 Xin Deng"/>
+      <SelectedBeast
+      show={showModal}
+      hide={handleCloseModal}
+      clickBeast={clickBeast}
+
+      />
     </main>
   );
 }
 
-export default App;
-
-// import React, {useState} from 'react';
-
-// import Header from './components/Header/Header.jsx';
-// import Gallery from './components/Gallery/Gallery.jsx';
-// import Footer from './components/Footer/Footer.jsx';
-// import SelectedBeast from './components/SelectedBeast/SelectedBeast.jsx';
-
-// import gallery from './assets/data.json';
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
-// function App(){
-
-// const [clickBeast, setClickBeast]=useState(null);
-
-// const [showModal, setShowModal]=useState(false);
-
-// const handleShowModal=(hornedBeast)=>{
-//   setClickBeast (hornedBeast);
-//   setShowModal(true);
-// };
-// const handleCloseModal=()=>{
-//   setShowModal(false);
-// };
-//   return(
-//     <main>
-//       <Header title="Gallery of Horns" beastGallery={gallery.length} />
-//       <Gallery list ={gallery} onImageClick={handleShowModal}/>
-//       <Footer content="&copy; 2023 Xin Deng"/>
-//       <SelectedBeast
-//       show={showModal}
-//       hide={handleCloseModal}
-//       clickBeast={clickBeast}
-
-//       />
-//     </main>
-//   );
-// }
-
-// export default App
+export default App
 
 // Map over the JSON data in your Gallery component to render each beast
 // Send a function into your Gallery component that allows the user to update state in the App

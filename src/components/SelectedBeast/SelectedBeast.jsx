@@ -1,61 +1,33 @@
+
+
+// Use the state in the App to render an individual beast in a Modal in the SelectedBeast component using React Bootstrap
+
 // Used Vertically center modal on react bootstrap site
 
+import React from 'react';
+import Modal from 'react-bootstrap/Modal';
+import Button from 'react-bootstrap/Button';
 
-import React from "react";
-import Modal from "react-bootstrap/Modal";
-import Button from "react-bootstrap/Button";
-
-function SelectedBeast({ show, hide, clickBeast }) {
+function SelectedBeast(props) {
   return (
-    <Modal show={show} onHide={hide} size="lg" centered>
+    <Modal show={props.show} onHide={props.hide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header closeButton>
-        <Modal.Title>{clickBeast && clickBeast.title}</Modal.Title>
+        <Modal.Title id="contained-modal-title-vcenter">
+          {props.clickBeast.title}
+        </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <img
-          src={clickBeast && clickBeast.imageUrl}
-          alt={clickBeast && clickBeast.title}
-          style={{ width: "100%" }}
-        />
-        <p>{clickBeast && clickBeast.description}</p>
+        <img src={props.clickBeast.imageUrl} alt={props.clickBeast.title} style={{ width: '100%' }} />
+        <p>{props.clickBeast.description}</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={hide}>Close</Button>
+        <Button onClick={props.hide}>Close</Button>
       </Modal.Footer>
     </Modal>
   );
 }
 
 export default SelectedBeast;
-
-// Use the state in the App to render an individual beast in a Modal in the SelectedBeast component using React Bootstrap
-
-// Used Vertically center modal on react bootstrap site
-
-// import React from 'react';
-// import Modal from 'react-bootstrap/Modal';
-// import Button from 'react-bootstrap/Button';
-
-// function SelectedBeast(props) {
-//   return (
-//     <Modal show={props.show} onHide={props.hide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
-//       <Modal.Header closeButton>
-//         <Modal.Title id="contained-modal-title-vcenter">
-//           {props.clickBeast && props.clickBeast.title}
-//         </Modal.Title>
-//       </Modal.Header>
-//       <Modal.Body>
-//         <img src={props.clickBeast && props.clickBeast.imageUrl} alt={props.clickBeast && props.clickBeast.title} style={{ width: '100%' }} />
-//         <p>{props.clickBeast && props.clickBeast.description}</p>
-//       </Modal.Body>
-//       <Modal.Footer>
-//         <Button onClick={props.hide}>Close</Button>
-//       </Modal.Footer>
-//     </Modal>
-//   );
-// }
-
-// export default SelectedBeast;
 
 // import Button from 'react-bootstrap/Button';
 // import Modal from 'react-bootstrap/Modal';

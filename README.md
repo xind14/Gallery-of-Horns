@@ -112,3 +112,42 @@ I spent four hours on this, but an hour of it was figuring out how to set up the
     - Seven hrs which is an hour longer then estimated because the directions on the lab were confusing and the TA and john were telling me different things of where to put useState. 
 
 
+## Gallery of Horns Pt. 4
+
+
+### Author: Xin Deng, Ekow Yawson, ChatGpt, Grid on React Bootstrap
+
+- My images and modal weren't rendering, he helped me figure out the onClick in the card img was wrong 
+- ChatGPT helped with a lot of formatting and scoping issues 
+
+
+
+### Time Estimate
+
+1. Number and name of feature: Feature #1: Display a modal
+    - Estimate of time needed to complete: 9 hrs
+    - Start time: 2:15pm
+    - Finish time: 8:13pm
+    - Actual time needed to complete: 7 hrs
+
+
+
+### Links and Resources
+
+- [data.json](https://codefellows.github.io/code-301-guide/curriculum/class-02/lab/assets/data.json)
+
+
+### Lighthouse Accessibility Report Score
+
+![Lighthouse report for Lab 4](src/assets/lighthouse4.png)
+
+### Reflections and Comments
+
+1. A question within the context of the lab assignment
+    - I don't understand scope of having state in app still and how to make sure everything is link to each other. 
+1. An observation about the lab assignment, or related ‘Ah-hah!’ moment
+    - Is there something we're not getting in terms of bootstrap CSS because it feels like it's not allowing changes easily.
+1. How long you spent working on this assignment
+    - Seven hrs which is an hour longer then estimated because the directions on the lab were confusing and the TA and john were telling me different things of where to put useState. 
+
+
