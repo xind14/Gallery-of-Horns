@@ -21,7 +21,6 @@ function Gallery(props) {
             description={hornedBeast.description}
             keyword={hornedBeast.keyword}
             horns={hornedBeast.horns}
-            // userClick={() => props.onImageClick(hornedBeast)}
             userClick={() => props.onImageClick(hornedBeast)}
     
           />

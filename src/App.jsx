@@ -4,6 +4,7 @@ import Header from './components/Header/Header.jsx';
 import Gallery from './components/Gallery/Gallery.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import SelectedBeast from './components/SelectedBeast/SelectedBeast.jsx';
+import FilterBeast from './components/FilterBeast/FilterBeast.jsx';
 
 import gallery from './assets/data.json';
 
@@ -14,6 +15,7 @@ function App(){
 const [clickBeast, setClickBeast]=useState({});
 
 const [showModal, setShowModal]=useState(false);
+const [filterHorns, setFilterHorns] = useState('All');
 
 const handleShowModal=(hornedBeast)=>{
   setClickBeast (hornedBeast);
@@ -22,9 +24,19 @@ const handleShowModal=(hornedBeast)=>{
 const handleCloseModal=()=>{
   setShowModal(false);
 };
+
+
+const handleFilter = (value) => {
+  setFilterValue(value);
+
+};
+
+
   return(
     <main>
       <Header title="Gallery of Horns" beastGallery={gallery.length} />
+      <FilterBeast onFilterChange={handleFilterChange} />
+
       <Gallery list ={gallery} onImageClick={handleShowModal}/>
       <Footer content="&copy; 2023 Xin Deng"/>
       <SelectedBeast

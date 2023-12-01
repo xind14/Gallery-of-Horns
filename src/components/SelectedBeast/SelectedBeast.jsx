@@ -9,10 +9,12 @@ import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
 function SelectedBeast(props) {
-  console.log('SelectedBeast Props:', props);
-console.log('SelectedBeast clickBeast:', props.clickBeast);
   return (
-    <Modal show={props.show} onHide={props.hide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+    <Modal show={props.show} 
+    onHide={props.hide} 
+    size="lg" aria-labelledby="contained-modal-title-vcenter" centered
+    backdrop="static"  
+    keyboard={false}>
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
           {props.clickBeast.title}
