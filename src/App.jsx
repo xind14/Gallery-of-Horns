@@ -26,15 +26,13 @@ const handleCloseModal=()=>{
   setShowModal(false);
 };
 
-// Used chatGPT for this, could not figure out how to use ? and : shown in class today
+// Used chatGPT for this, could not figure out how to use ? and : shown in class
 const handleFilterHorns = (value) => {
-  // console.log('Filtering by Horns:', value);
   setFilterHorns(value);
   const filteredData = value === 'All'
   ? gallery
   : gallery.filter(hornedBeast => hornedBeast.horns ===parseInt(value) );
   console.log('Filtered Data:', filteredData);
-  // console.log('Updated Gallery Data:', filteredData);
 setGalleryData([...filteredData]);
 };
 
@@ -42,7 +40,7 @@ setGalleryData([...filteredData]);
   return(
     <main>
       <Header title="Gallery of Horns" beastGallery={gallery.length} />
-      <FilterBeast onFilterHorns={handleFilterHorns} />
+      <FilterBeast onFilterHorns={handleFilterHorns} filterHorns={filterHorns} />
 
       <Gallery list ={galleryData} onImageClick={handleShowModal}/>
       <Footer content="&copy; 2023 Xin Deng"/>

@@ -48,38 +48,3 @@ function HornedBeast(props) {
 
 export default HornedBeast;
 
-//class demo
-// import React, {useState} from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
-
-// function Person( props ) {
-
-// function vote() {
-//     // Call a method in the parent that does the voting...
-//     props.handleVote(props.name);
-// }
-
-// return (
-//     <Card style={{ width: '18rem', margin:"1em"}}>
-//     <Card.Img variant="top" src="https://placehold.co/100x100" />
-//     <Card.Body>
-//         <Card.Title>{props.name}</Card.Title>
-//         <Card.Text>
-//         Votes: {props.votes}
-//         </Card.Text>
-//         <Button onClick={vote} variant="primary">Vote for {props.name}</Button>
-//     </Card.Body>
-//     </Card>
-// );
-
-// }
-
-// export default Person;
-
-// "_id": 1,
-// "image_url": "http://3.bp.blogspot.com/_DBYF1AdFaHw/TE-f0cDQ24I/AAAAAAAACZg/l-FdTZ6M7z8/s1600/Unicorn_and_Narwhal_by_dinglehopper.jpg",
-// "title": "UniWhal",
-// "description": "A unicorn and a narwhal nuzzling their horns",
-// "keyword": "narwhal",
-// "horns": 1
